@@ -402,9 +402,14 @@ public class TestHelper {
         account = new CloudStorageAccount(credentials, new StorageUri(tenant.getBlobServiceEndpoint(),
                 tenant.getBlobServiceSecondaryEndpoint()), new StorageUri(tenant.getQueueServiceEndpoint(),
                 tenant.getQueueServiceSecondaryEndpoint()), new StorageUri(tenant.getTableServiceEndpoint(),
+                tenant.getTableServiceSecondaryEndpoint()));
+        /*
+        account = new CloudStorageAccount(credentials, new StorageUri(tenant.getBlobServiceEndpoint(),
+                tenant.getBlobServiceSecondaryEndpoint()), new StorageUri(tenant.getQueueServiceEndpoint(),
+                tenant.getQueueServiceSecondaryEndpoint()), new StorageUri(tenant.getTableServiceEndpoint(),
                 tenant.getTableServiceSecondaryEndpoint()), new StorageUri(tenant.getFileServiceEndpoint(),
                 tenant.getFileServiceSecondaryEndpoint()));
-
+*/
         if (premiumBlobTenant != null) {
             premiumBlobCredentials = new StorageCredentialsAccountAndKey(premiumBlobTenant.getAccountName(), premiumBlobTenant.getAccountKey());
             premiumBlobAccount = new CloudStorageAccount(premiumBlobCredentials, new StorageUri(premiumBlobTenant.getBlobServiceEndpoint(), premiumBlobTenant.getBlobServiceSecondaryEndpoint()),

@@ -513,7 +513,7 @@ public final class Utility {
      * @return <code>true</code> if the specified URI is path-style; otherwise, <code>false</code>.
      */
     public static boolean determinePathStyleFromUri(final URI baseURI) {
-        String path = baseURI.getPath();
+        String path = baseURI.toString();
         if (path != null && path.startsWith("/")) {
             path = path.substring(1);
         }

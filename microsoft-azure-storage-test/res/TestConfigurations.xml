@@ -1,31 +1,17 @@
 <TestConfigurations>
-<TargetTestTenant>ProductionTenant</TargetTestTenant>
-<TargetPremiumBlobTenant>ProductionTenant</TargetPremiumBlobTenant>
+<TargetTestTenant>DevStore</TargetTestTenant>
 <TenantConfigurations>
   <TenantConfiguration>
     <TenantName>DevStore</TenantName>
     <TenantType>DevStore</TenantType>
-    <AccountName>devstoreaccount1</AccountName>
-    <AccountKey>Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==</AccountKey>
-    <BlobServiceEndpoint>http://127.0.0.1:10000/devstoreaccount1</BlobServiceEndpoint>
-    <QueueServiceEndpoint>http://127.0.0.1:10001/devstoreaccount1</QueueServiceEndpoint>
-    <TableServiceEndpoint>http://127.0.0.1:10002/devstoreaccount1</TableServiceEndpoint>
-    <BlobServiceSecondaryEndpoint>http://127.0.0.1:10000/devstoreaccount1-secondary</BlobServiceSecondaryEndpoint>
-    <QueueServiceSecondaryEndpoint>http://127.0.0.1:10001/devstoreaccount1-secondary</QueueServiceSecondaryEndpoint>
-    <TableServiceSecondaryEndpoint>http://127.0.0.1:10002/devstoreaccount1-secondary</TableServiceSecondaryEndpoint>
-  </TenantConfiguration>
-  <TenantConfiguration>
-    <TenantName>ProductionTenant</TenantName>
-    <TenantType>Cloud</TenantType>
-    <AccountName>[ACCOUNT NAME HERE]</AccountName>
-    <AccountKey>[ACCOUNT KEY HERE]</AccountKey>
-    <BlobServiceEndpoint>http://[ACCOUNT].blob.core.windows.net</BlobServiceEndpoint>
-    <QueueServiceEndpoint>http://[ACCOUNT].queue.core.windows.net</QueueServiceEndpoint>
-    <TableServiceEndpoint>http://[ACCOUNT].table.core.windows.net</TableServiceEndpoint>
-    <FileServiceEndpoint>http://[ACCOUNT].file.core.windows.net</FileServiceEndpoint>
-    <BlobServiceSecondaryEndpoint>http://[ACCOUNT]-secondary.blob.core.windows.net</BlobServiceSecondaryEndpoint>
-    <QueueServiceSecondaryEndpoint>http://[ACCOUNT]-secondary.queue.core.windows.net</QueueServiceSecondaryEndpoint>
-    <TableServiceSecondaryEndpoint>http://[ACCOUNT]-secondary.table.core.windows.net</TableServiceSecondaryEndpoint>
+    <AccountName>localhost</AccountName>
+    <AccountKey>C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==</AccountKey>
+    <BlobServiceEndpoint>http://localhost.table:8100/localhost</BlobServiceEndpoint>
+    <QueueServiceEndpoint>http://localhost.table:8100/localhost</QueueServiceEndpoint>
+    <TableServiceEndpoint>http://localhost.table:8100/localhost</TableServiceEndpoint>
+    <BlobServiceSecondaryEndpoint>http://localhost.table:8100/localhost</BlobServiceSecondaryEndpoint>
+    <QueueServiceSecondaryEndpoint>http://localhost.table:8100/localhost</QueueServiceSecondaryEndpoint>
+    <TableServiceSecondaryEndpoint>http://localhost.table:8100/localhost</TableServiceSecondaryEndpoint>
   </TenantConfiguration>
 </TenantConfigurations>
 </TestConfigurations>
