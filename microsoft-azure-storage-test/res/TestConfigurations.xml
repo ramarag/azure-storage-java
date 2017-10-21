@@ -1,17 +1,29 @@
 <TestConfigurations>
-<TargetTestTenant>DevStore</TargetTestTenant>
+<TargetTestTenant>cloudtest</TargetTestTenant>
 <TenantConfigurations>
   <TenantConfiguration>
     <TenantName>DevStore</TenantName>
     <TenantType>DevStore</TenantType>
     <AccountName>localhost</AccountName>
     <AccountKey>C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==</AccountKey>
-    <BlobServiceEndpoint>http://localhost.table:8100/localhost</BlobServiceEndpoint>
-    <QueueServiceEndpoint>http://localhost.table:8100/localhost</QueueServiceEndpoint>
-    <TableServiceEndpoint>http://localhost.table:8100/localhost</TableServiceEndpoint>
-    <BlobServiceSecondaryEndpoint>http://localhost.table:8100/localhost</BlobServiceSecondaryEndpoint>
-    <QueueServiceSecondaryEndpoint>http://localhost.table:8100/localhost</QueueServiceSecondaryEndpoint>
-    <TableServiceSecondaryEndpoint>http://localhost.table:8100/localhost</TableServiceSecondaryEndpoint>
+    <BlobServiceEndpoint>http://localhost.table:8200/localhost</BlobServiceEndpoint>
+    <QueueServiceEndpoint>http://localhost.table:8200/localhost</QueueServiceEndpoint>
+    <TableServiceEndpoint>http://localhost.table:8200/localhost</TableServiceEndpoint>
+    <BlobServiceSecondaryEndpoint>http://localhost.table:8200/localhost</BlobServiceSecondaryEndpoint>
+    <QueueServiceSecondaryEndpoint>http://localhost.table:8200/localhost</QueueServiceSecondaryEndpoint>
+    <TableServiceSecondaryEndpoint>http://localhost.table:8200/localhost</TableServiceSecondaryEndpoint>
+  </TenantConfiguration>
+  <TenantConfiguration>
+    <TenantName>cloudtest</TenantName>
+    <TenantType>cloudtest</TenantType>
+    <AccountName>ramaragtabletest</AccountName>
+    <AccountKey>MLt9CWXCP/FHFItPoYvYgnH92Kfy6NelpZJ2RLl8kHx36GZ4H3QMq9vUJWQDlIq3wfvGqppWGM5Aaq9chxEV8A==</AccountKey>
+    <BlobServiceEndpoint>http://localhost.table:8200/localhost</BlobServiceEndpoint>
+    <QueueServiceEndpoint>http://localhost.table:8200/localhost</QueueServiceEndpoint>
+    <TableServiceEndpoint>https://ramaragtabletest.table.core.windows.net/</TableServiceEndpoint>
+    <BlobServiceSecondaryEndpoint>http://localhost.table:8200/localhost</BlobServiceSecondaryEndpoint>
+    <QueueServiceSecondaryEndpoint>http://localhost.table:8200/localhost</QueueServiceSecondaryEndpoint>
+    <TableServiceSecondaryEndpoint>https://ramaragtabletest.table.core.windows.net/</TableServiceSecondaryEndpoint>
   </TenantConfiguration>
 </TenantConfigurations>
 </TestConfigurations>
