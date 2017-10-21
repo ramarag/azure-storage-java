@@ -186,9 +186,9 @@ public class TableOperationTests {
             fail();
         }
         catch (TableServiceException ex) {
-            assertEquals(ex.getMessage(), "Bad Request");
+            assertEquals(ex.getMessage(), "Request Entity Too Large");
             assertTrue(ex.getExtendedErrorInformation().getErrorMessage()
-                    .startsWith("The entity is larger than the maximum allowed size (1MB)."));
+                    .startsWith("The entity is larger than the maximum allowed size."));
             assertEquals(ex.getExtendedErrorInformation().getErrorCode(), "EntityTooLarge");
         }
     }
