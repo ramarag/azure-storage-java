@@ -78,7 +78,7 @@ public class TableClientTests {
         String tableBaseName = TableTestHelper.generateRandomTableName();
 
         ArrayList<String> tables = new ArrayList<String>();
-        for (int m = 0; m < 20; m++) {
+        for (int m = 0; m < 15; m++) {
             String name = String.format("%s%s", tableBaseName, new DecimalFormat("#0000").format(m));
             CloudTable table = tClient.getTableReference(name);
             table.create();
@@ -149,7 +149,7 @@ public class TableClientTests {
         String tableBaseName = TableTestHelper.generateRandomTableName();
 
         ArrayList<String> tables = new ArrayList<String>();
-        for (int m = 0; m < 20; m++) {
+        for (int m = 0; m < 15; m++) {
             String name = String.format("%s%s", tableBaseName, new DecimalFormat("#0000").format(m));
             CloudTable table = tClient.getTableReference(name);
             table.create();
@@ -206,7 +206,7 @@ public class TableClientTests {
         String tableBaseName = TableTestHelper.generateRandomTableName();
 
         ArrayList<String> tables = new ArrayList<String>();
-        for (int m = 0; m < 20; m++) {
+        for (int m = 0; m < 15; m++) {
             String name = String.format("%s%s", tableBaseName, new DecimalFormat("#0000").format(m));
             CloudTable table = tClient.getTableReference(name);
             table.create();
@@ -222,14 +222,14 @@ public class TableClientTests {
                 currTable++;
             }
 
-            assertEquals(20, currTable);
+            assertEquals(15, currTable);
             // Second Iteration
             currTable = 0;
             for (String s : listTables) {
                 assertEquals(s, String.format("%s%s", tableBaseName, new DecimalFormat("#0000").format(currTable)));
                 currTable++;
             }
-            assertEquals(20, currTable);
+            assertEquals(15, currTable);
 
             // Without prefix
             currTable = 0;
@@ -240,7 +240,7 @@ public class TableClientTests {
                 }
             }
 
-            assertEquals(20, currTable);
+            assertEquals(15, currTable);
             currTable = 0;
             for (String s : listTablesNoPrefix) {
                 if (s.startsWith(tableBaseName)) {
@@ -248,7 +248,7 @@ public class TableClientTests {
                 }
             }
 
-            assertEquals(20, currTable);
+            assertEquals(15, currTable);
         }
         finally {
             for (String s : tables) {
