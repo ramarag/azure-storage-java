@@ -1,17 +1,17 @@
 <TestConfigurations>
-<TargetTestTenant>cloudtest</TargetTestTenant>
+<TargetTestTenant>localtest</TargetTestTenant>
 <TenantConfigurations>
   <TenantConfiguration>
-    <TenantName>DevStore</TenantName>
-    <TenantType>DevStore</TenantType>
+    <TenantName>localtest</TenantName>
+    <TenantType>localtest</TenantType>
     <AccountName>localhost</AccountName>
     <AccountKey>C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==</AccountKey>
     <BlobServiceEndpoint>http://localhost.table:8200/localhost</BlobServiceEndpoint>
     <QueueServiceEndpoint>http://localhost.table:8200/localhost</QueueServiceEndpoint>
-    <TableServiceEndpoint>http://localhost.table:8200/localhost</TableServiceEndpoint>
+    <TableServiceEndpoint>http://localhost.table:8200/</TableServiceEndpoint>
     <BlobServiceSecondaryEndpoint>http://localhost.table:8200/localhost</BlobServiceSecondaryEndpoint>
     <QueueServiceSecondaryEndpoint>http://localhost.table:8200/localhost</QueueServiceSecondaryEndpoint>
-    <TableServiceSecondaryEndpoint>http://localhost.table:8200/localhost</TableServiceSecondaryEndpoint>
+    <TableServiceSecondaryEndpoint>http://localhost.table:8200/</TableServiceSecondaryEndpoint>
   </TenantConfiguration>
   <TenantConfiguration>
     <TenantName>cloudtest</TenantName>
